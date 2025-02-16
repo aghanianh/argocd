@@ -4,10 +4,10 @@ metadata:
   name: custom-service
   namespace: prod
 spec:
-  type: NodePort
   selector:
-    app: color 
+    app: color
   ports:
-    - port: 5000
+    - protocol: TCP
+      port: 5000      
       targetPort: 5000
-      nodePort: 30007
+  type: ClusterIP   
