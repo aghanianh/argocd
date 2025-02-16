@@ -3,13 +3,11 @@ kind: Service
 metadata:
   name: color
   namespace: prod
-
 spec:
   selector:
     app: color
   ports:
-    - protocol: "tcp"
+    - protocol: TCP
       port: 5000
       targetPort: 5000
-    ClusterIP: None 
-    
+  clusterIP: None
