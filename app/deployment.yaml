@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: color
-          image: redeagleindocker/colors:v2
+          image: redeagleindocker/colors:4
           ports:
             - containerPort: 5000
